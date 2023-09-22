@@ -46,19 +46,38 @@ a{
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    text-decoration: none;
     
 }
 
 span{
-    text-decoration: none;
+    
     color: white;
 }
 
 li:hover{
-
     transform: scale(1.4);
-
-
 }
 
-/* Poroxima etapa: Responsividade */
+@media screen and (max-width: 420px) {
+    .bar{
+        padding: 12px 24px 12px;
+
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 68px;
+    }
+
+    span{
+        display: none;
+    }
+
+    i{
+        color: white;
+        font-size: 1.5rem;
+        
+    }
+}

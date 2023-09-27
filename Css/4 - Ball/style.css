@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ball{
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+
+    position: relative;
+
+    border-radius: 200px;
+
+    left: 40%;
+    top: 200px;
+
+    box-shadow: 6px 0px 0px 4px rgb(22, 22, 22);
+
+    transition: ease-in-out 0.5s;
+}
+
+.ball:hover{
+    box-shadow: -6px 0px 0px 4px rgb(22, 22, 22);
+}

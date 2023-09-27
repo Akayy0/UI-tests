@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .main{
@@ -12,7 +15,7 @@
 }
 
 .card {
-    background-color: rgb(163, 230, 88);
+    background:linear-gradient(to bottom right, rgb(163, 230, 88),rgb(163, 230, 88), rgb(139, 0, 219)); ;
     border-radius: 20px;
     display: grid; 
     grid-template-columns: 1.5fr 1fr; 
@@ -35,23 +38,29 @@ Img {
 
 .info h2{
     font-size: 44px;
-    font-weight: bold;
+    font-weight: 600;
 
 
 
     text-align: left;
     margin-bottom: 20px;
     margin-left: 4px;
+
+
+    color: white;
     
 
 }
 .info .desc{
     text-align: left;
-    margin-top: 40px;
-    font-size: 14px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 300;
 
-    max-width: 240px;
+    max-width: 300px;
     margin-left: 8px;
+
+    color: white;
 
 
    
@@ -59,11 +68,13 @@ Img {
 
 .info .price{
     text-align: right;
-    font-weight: bold;
+    font-weight: 600;
 
     position: relative;
-    top: 224px;
+    top: 200px;
     right: 10px;
+
+    color: white;
 }
 
 .addProduct{
@@ -71,6 +82,7 @@ Img {
     grid-column: 2;
 
     position: relative;
+    
 
     top: 178px;
     left: 175px;
@@ -78,8 +90,26 @@ Img {
     width: 150px;
     height: 50px;
 
+
+    border: 1px solid white;
     border-radius: 8px;
-    border-style: none;
+    border-style: linear;
+    
+
+    background-color: rgb(163, 230, 88);
+    color: white;
+
+    transition: ease-in-out 0.5s;
+
+}
+
+.addProduct:hover{
+
+    transform: rotate(-2deg);
+
+    background-color: rgb(139, 0, 219) ;
+
+    cursor: pointer;
 
 }
 

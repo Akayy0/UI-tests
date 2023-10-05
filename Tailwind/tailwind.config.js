@@ -1,12 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ['./Button/index.html','./navBar/index.html',],
   theme: {
-    extend: {
-      fontFamily:{
-        sans:['Poppins', 'sans']
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
